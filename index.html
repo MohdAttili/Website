@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>قائمة جانبية</title>
+    <style>
+        body {
+            background-color: #A7E4BB;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+        .menu-container {
+            position: fixed;
+            right: -100%;
+            width: 20%;
+            height: 100% ;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            transition: right 0.4s ease;
+        }   
+        .menu-container ul {
+            list-style-type: none;
+            padding:0;
+            margin: 0;
+            width: 100%;
+        }
+        .menu-container ul li {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            text-align: right;
+            cursor: pointer;
+        }
+        .menu-container ul li:hover {
+            transition: 0.3s ease;
+            background-color: #555;
+            color: white;
+        }
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width : 20%;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        .menu-button div {
+            width: 30px;
+            height: 4px;
+            background-color: #ffffff;
+            margin: 5px 0;
+            transition: background-color 0.3s ease;
+        }
+        .menu-button.active div {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>AAA</h1>
+
+<button class="menu-button" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</button>
+
+<div class="menu-container" id="menu">
+    <ul>
+        <li>الخيار الأول</li>
+        <li>الخيار الثاني</li>
+        <li>الخيار الثالث</li>
+        <li>الخيار الرابع</li>
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const menuButton = document.querySelector('.menu-button');
+        
+        if (menu.style.right === '0px') {
+            menu.style.right = '-100%';
+            menuButton.classList.remove('active');
+        } else {
+            menu.style.right = '0px';
+            menuButton.classList.add('active');
+        }
+    }
+</script>
+
 </body>
 </html>
