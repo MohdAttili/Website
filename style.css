@@ -24,7 +24,7 @@
   padding: 0; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Tajawal", sans-serif; }
 
 h1,
 h2,
@@ -137,6 +137,11 @@ ol {
 img {
   height: auto;
   max-width: 100%; }
+  body {
+    /* direction: rtl; */
+    text-align: right;
+}
+
 
 .sonar-table {
   display: table;
@@ -481,7 +486,7 @@ img {
       .header-area .menu-content-area .header-social-area {
         margin-right: 15px; } }
   .header-area.sticky {
-    background-color: #232323; }
+    background-color: #1a241d; }
   @media only screen and (max-width: 767px) {
     .header-area {
       padding: 10px 0; } }
