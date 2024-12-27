@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waves For Gaza's Future</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Kanit&family=Press+Start+2P&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Kanit&family=Press+Start+2P&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,7 +18,6 @@
         <h1 class="pageTitle">Waves For Gaza's Future</h1>
     </div>
 
-    <!-- Sidebar (مخفية في الشاشات الصغيرة) -->
     <div class="sidebar" id="mySidebar">
         <a href="#">الرابط 1</a>
         <a href="#">الرابط 2</a>
@@ -20,7 +25,6 @@
         <a href="#">الرابط 4</a>
     </div>
 
-    <!-- Content -->
     <div>
         <h1 class="keyWord">نسعى لتوفير نظام طاقة مستدام لقطاع غزة</h1>
         <div class="container" style="padding-top: 120px;">
@@ -38,21 +42,18 @@
         </div>
     </div>
 
-    <!-- Sidebar Toggle Button -->
     <span class="hamburger" onclick="toggleNav()" id="hamburger">&#9776;</span>
 
     <script>
-        // Function to toggle the sidebar (open and close)
         function toggleNav() {
             var sidebar = document.getElementById("mySidebar");
             var hamburger = document.getElementById("hamburger");
-            // If the sidebar is already open, close it, otherwise open it
             if (sidebar.style.width === "250px") {
                 sidebar.style.width = "0";
-                hamburger.innerHTML = "&#9776;"; // إعادة الشحطات
+                hamburger.innerHTML = "&#9776;"; 
             } else {
                 sidebar.style.width = "250px";
-                hamburger.innerHTML = "&#10005;"; // تحويل إلى ×
+                hamburger.innerHTML = "&#10005;";
             }
         }
     </script>

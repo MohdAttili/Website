@@ -75,8 +75,7 @@ font-family: 'Tajawal';
     display: block; 
     margin: 0 auto; 
 }
-/* Sidebar Style */
-/* Sidebar Style */
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -104,21 +103,20 @@ font-family: 'Tajawal';
     color: #f1f1f1;
 }
 
-/* Hamburger Button (الزر العائم) */
 .hamburger {
-    font-size: 25px;  /* جعل حجم الزر أصغر */
-    color: white;
+    font-size: 25px;  
+    color: black;
     cursor: pointer;
     position: fixed;
-    top: 10px;  /* تقليل المسافة بين الزر والشريط العلوي */
-    right: 15px; /* المسافة من الجهة اليمنى */
-    z-index: 2;  /* جعل الزر فوق الشريط الجانبي */
-    background-color: #d3d3d3; /* اللون السكني */
+    top: 10px;  
+    right: 15px; 
+    z-index: 2;  
+    background-color: #d3d3d3; 
     border: none;
-    border-radius: 50%; /* جعل الزر دائري */
+    border-radius: 50%; 
     padding: 10px;
-    width: 20px; /* عرض الزر أصغر */
-    height: 20px; /* ارتفاع الزر أصغر */
+    width: 20px; 
+    height: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,13 +125,11 @@ font-family: 'Tajawal';
 
 
 
-/* Media Query for small screens (mobile) */
 @media screen and (max-width: 768px) {
     .container {
-        padding-top: 80px; /* لتعديل المسافة بسبب ظهور الشريط الجانبي */
+        padding-top: 80px;
     }
 
-    /* When the screen size is small, the sidebar will cover the full height */
     .sidebar a {
         font-size: 20px;
     }
