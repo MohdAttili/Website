@@ -4,7 +4,7 @@
     --third :#80B8CE;
 }
 body{
-    background: #d3d3d3;
+    background: white;
 }
 body,h1 {
     margin: 0;
@@ -14,7 +14,7 @@ body,h1 {
     font-family: 'Chewy';
     text-align: center;
     font-size: 50px;
-    font-weight: 100;
+    font-weight: 500;
 
 }
 .pageHeader{
@@ -23,13 +23,14 @@ body,h1 {
     background-color: var(--third);
     border-bottom-right-radius: 10px; 
     border-bottom-left-radius: 10px;
+    z-index: 1;
     
 }
 .paragraph{
 margin-right: 20px;
 margin-top: 20px;       
 direction: rtl;
-font-size: 20px;
+font-size: 24px;
 font-family: 'Tajawal';
 }
 .subtitle{
@@ -51,7 +52,7 @@ font-family: 'Tajawal';
     font-family: 'Tajawal';
     text-align: center;
     padding: 20px; 
-    padding-top: 100px;
+    padding-top: 80px;
    
 }
 .container {
@@ -68,7 +69,7 @@ font-family: 'Tajawal';
 }  
     
 .container img {
-    max-width: 75%; 
+    max-width: 70%; 
     height: auto; 
     border-radius: 10px; 
     align-items: center;
@@ -80,21 +81,22 @@ font-family: 'Tajawal';
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: var(--third);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     direction: rtl;
+    text-align: center;
+    
 }
 
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #d3d3d3;
+    
     display: block;
     transition: 0.3s;
 }
@@ -112,7 +114,7 @@ font-family: 'Tajawal';
     top: 10px;  
     right: 15px; 
     z-index: 2;  
-    background-color: #d3d3d3; 
+    background-color: white; 
     border: none;
     border-radius: 50%; 
     padding: 10px;
@@ -124,7 +126,11 @@ font-family: 'Tajawal';
     transition: background-color 0.3s, transform 0.3s;
 }
 
-
+.link{
+    font-family: 'Tajawal';
+    font-size: 24px;
+    color : black;
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -143,4 +149,20 @@ font-family: 'Tajawal';
     span {
         font-size: 24px;
     }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
 }
