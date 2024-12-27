@@ -166,3 +166,37 @@ font-family: 'Tajawal';
 .footer p {
     margin: 0;
 }
+.containerColumn {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center;
+}
+
+.subtitle, .link {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+    
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    height: 100vh;            /* Make sure the div takes full screen height */
+    text-align: center;
+}
