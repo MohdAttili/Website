@@ -5,6 +5,7 @@
 }
 body{
     background: white;
+    
 }
 body,h1 {
     margin: 0;
@@ -65,17 +66,21 @@ font-family: 'Tajawal';
 .container div {
     flex: 1; 
     padding: 10px;
-    text-align: center;
+    align-items: center;
+    
 }  
     
 .container img {
-    max-width: 70%; 
+    max-width: 60%; 
     height: auto; 
     border-radius: 10px; 
     align-items: center;
     display: block; 
-    margin: 0 auto; 
+    margin: 0 auto ; 
+    margin-bottom: 200px;
 }
+ 
+
 
 .sidebar {
     height: 100%;
@@ -195,8 +200,8 @@ font-family: 'Tajawal';
 
 .centered-content {
     display: flex;
-    justify-content: center;  /* Horizontal centering */
-    align-items: center;      /* Vertical centering */
-    height: 100vh;            /* Make sure the div takes full screen height */
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;        
     text-align: center;
 }
