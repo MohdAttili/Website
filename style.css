@@ -14,9 +14,9 @@ body,h1 {
 .pageTitle{
     font-family: 'Chewy';
     text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 100;
 }
 .pageHeader{
     height: 60px;
@@ -28,11 +28,17 @@ body,h1 {
     
 }
 .paragraph{
-margin-right: 20px;
-margin-top: 20px;       
+margin: 20px;
 direction: rtl;
 font-size: 24px;
 font-family: 'Tajawal';
+
+}
+.container div:last-child {
+    margin-bottom: 50px;
+}
+.subtitle p:last-child {
+    margin-bottom: 50px;
 }
 .subtitle{
     font-family: 'Tajawal';
@@ -52,9 +58,8 @@ font-family: 'Tajawal';
 .keyWord{
     font-family: 'Tajawal';
     text-align: center;
-    padding: 20px; 
-    padding-top: 80px;
-   
+    margin-top: 50px;
+    color: black;
 }
 .container {
     display: flex; 
@@ -71,13 +76,11 @@ font-family: 'Tajawal';
 }  
     
 .container img {
-    max-width: 60%; 
+    max-width: 75%; 
     height: auto; 
     border-radius: 10px; 
-    align-items: center;
     display: block; 
     margin: 0 auto ; 
-    margin-bottom: 200px;
 }
  
 
@@ -129,7 +132,9 @@ font-family: 'Tajawal';
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
 }
+
 
 .link{
     font-family: 'Tajawal';
@@ -139,7 +144,7 @@ font-family: 'Tajawal';
 
 @media screen and (max-width: 768px) {
     .container {
-        padding-top: 80px;
+        padding-top: 20px;
     }
 
     .sidebar a {
@@ -166,6 +171,7 @@ font-family: 'Tajawal';
     width: 100%;
     font-family: 'Tajawal', sans-serif;
     font-size: 14px;
+    
 }
 
 .footer p {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves For Gaza's Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Kanit&family=Press+Start+2P&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pageHeader">
+        <h1 class="pageTitle">Waves For Gaza's Future</h1>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <div id="links-container">
+            <a href="index.html" class="link">الصفحة الرئيسية</a>
+            <a href="statistics.html" class="link">الإحصاءات</a>
+            <a href="ResearchHypotheses.html" class="link">الخلفية العلمية وفرضيات البحث</a>
+            <a href="resources.html" class="link">المصادر</a>
+            <a href="design.html" class="link">التصميم</a>
+            <a href="allFiles.html" class="link">الملفات الكاملة للبحث العلمي</a>
+            <a href="aboutUs.html" class="link">من نحن</a>
+            <a href="financialReport.html" class="link">التقرير المالي</a>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="keyWord">من نحن؟</h1>
+        <div class="container" >
+            <div><img src="/resources/imgs/mohd.jpg"></div>
+            <div class>
+                <p class="subtitle" style="font-weight: 700;">محمد ليث عتيلي: 16 عام</p>
+                <p class="paragraph" style="font-size: 24px;">طالب في الصف العاشر المهني في مدرسة طولكرم الصناعية، لديه ميول إلى المجالات التقنية، وقد شارك سابقاً في عدة مسابقات لحل المشكلات، ومسابقات برمجة أخرى، ويطمح ليكون مبرمجاً تنافسياً عالمياً في السنوات القادمة.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="container" >
+            <div><img src="/resources/imgs/saqr.png"></div>
+            <div >  
+                <p class="subtitle" style="font-weight: 700;">م.صقر جابر: 27 عام</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam animi cumque quam. Natus, itaque nostrum, voluptatibus earum tempora velit molestiae enim quos doloremque quaerat, eius reprehenderit aperiam consectetur voluptatem!
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <span class="hamburger" onclick="toggleNav()" id="hamburger">&#9776;</span>
+
+    <footer class="footer">
+        <p>&copy; 2024 Waves For Gaza's Future. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidebar");
+            var hamburger = document.getElementById("hamburger");
+            var container = document.getElementById("links-container");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                container.style.display = 'none'
+                hamburger.innerHTML = "&#9776;"; 
+            } else {
+                sidebar.style.width = "250px";
+                container.style.display = 'block'
+                hamburger.innerHTML = "&#10005;";
+            }
+        }
+        document.addEventListener("click", function (event) {
+            var sidebar = document.getElementById("mySidebar");
+            var hamburger = document.getElementById("hamburger");
+
+            if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+                sidebar.style.width = "0";
+                document.getElementById("links-container").style.display = 'none';
+                hamburger.innerHTML = "&#9776;";
+            }
+        });
+    </script>
+
+</body>
+</html>

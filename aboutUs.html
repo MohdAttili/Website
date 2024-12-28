@@ -19,7 +19,7 @@
         <div id="links-container">
             <a href="index.html" class="link">الصفحة الرئيسية</a>
             <a href="statistics.html" class="link">الإحصاءات</a>
-            <a href="ResearchHypotheses.html" class="link">فرضيات البحث</a>
+            <a href="ResearchHypotheses.html" class="link">الخلفية العلمية وفرضيات البحث</a>
             <a href="resources.html" class="link">المصادر</a>
             <a href="design.html" class="link">التصميم</a>
             <a href="allFiles.html" class="link">الملفات الكاملة للبحث العلمي</a>
@@ -31,12 +31,13 @@
     <div>
         <h1 class="keyWord">من نحن؟</h1>
         <div class="container" >
+            <div><img src="/resources/imgs/mohd.jpg"></div>
             <div class>
                 <p class="subtitle" style="font-weight: 700;">محمد ليث عتيلي: 16 عام</p>
-                <p class="paragraph">طالب في الصف العاشر المهني في مدرسة طولكرم الصناعية، لديه ميول إلى المجالات التقنية، وقد شارك سابقاً في عدة مسابقات لحل المشكلات، ومسابقات برمجة أخرى، ويطمح ليكون مبرمجاً تنافسياً عالمياً في السنوات القادمة.
+                <p class="paragraph" style="font-size: 24px;">طالب في الصف العاشر المهني في مدرسة طولكرم الصناعية، لديه ميول إلى المجالات التقنية، وقد شارك سابقاً في عدة مسابقات لحل المشكلات، ومسابقات برمجة أخرى، ويطمح ليكون مبرمجاً تنافسياً عالمياً في السنوات القادمة.
                 </p>
             </div>
-            <div><img src="/resources/imgs/mohd.jpg"></div>
+
         </div>
     </div>
     <div>
@@ -72,6 +73,16 @@
                 hamburger.innerHTML = "&#10005;";
             }
         }
+        document.addEventListener("click", function (event) {
+            var sidebar = document.getElementById("mySidebar");
+            var hamburger = document.getElementById("hamburger");
+
+            if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+                sidebar.style.width = "0";
+                document.getElementById("links-container").style.display = 'none';
+                hamburger.innerHTML = "&#9776;";
+            }
+        });
     </script>
 
 </body>

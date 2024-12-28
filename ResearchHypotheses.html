@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves For Gaza's Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Kanit&family=Press+Start+2P&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pageHeader">
+        <h1 class="pageTitle">Waves For Gaza's Future</h1>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <div id="links-container">
+            <a href="index.html" class="link">الصفحة الرئيسية</a>
+            <a href="statistics.html" class="link">الإحصاءات</a>
+            <a href="ResearchHypotheses.html" class="link">الخلفية العلمية وفرضيات البحث</a>
+            <a href="resources.html" class="link">المصادر</a>
+            <a href="design.html" class="link">التصميم</a>
+            <a href="allFiles.html" class="link">الملفات الكاملة للبحث العلمي</a>
+            <a href="aboutUs.html" class="link">من نحن</a>
+            <a href="financialReport.html" class="link">التقرير المالي</a>
+        </div>
+    </div>
+    <div>
+        <h1 class="keyWord">الخلفية العلمية</h1>
+            <div class>
+                <p class=paragraph>يمكن توليد الكهرباء من خلال تركيب لوح عائم أو عوامة على سطح البحر، باستخدام الطاقة الحركية للأمواج التي تجعلها تتأرجح، وهذا ما يسمى بالطاقة الموجية أو المائية، على الرغم من أن مبدأها مشابه لمبدأ طاقة الرياح، إذ تستخدم تموجات الأمواج، إلا أن الطاقة التي ينتجها الماء أهم بكثير من تلك الناتجة عن الرياح بسبب زيادة كتلة الماء مقارنة بالهواء، تتأرجح محولات طاقة الموج هذه مع الموجات، وبالتالي تحويل طاقة الحركة إلى طاقة كهربائية ثم يتم توجيه هذه الكهرباء إلى المحطة الرئيسية، عبر كوابل بحرية.
+                    لكنها تواجه عدة مشاكل، على سبيل المثال يمكن أن تتشبث الطحالب بها، ويمكن لأسماك القرش والأسماك الأخرى أن تعضها، إضافة إلى صعوبة الصيانة، لوجود أجزاء تحت الماء.
+                    وعلى الرغم من أن معظم سطح الأرض مغطى بالماء إلا أن طاقة الأمواج تظل مورداً غير مستغل إلى حد كبير، وإذا تم استخدامه بشكل صحيح يمكن أن يمثل طفرة كبيرة في مجال الطاقات الجديدة.
+                    
+                    من هنا أتت فكرة مشروع ("Waves for Gaza's Future") حيث يحل المشاكل التي واجهتها المولدات السابقة
+                    </p>
+                
+            </div>
+            
+    </div>
+    <div style="margin-bottom: 100px;">
+        <h1 class="keyWord">فرضيات البحث</h1>
+            <div >
+                <p class="paragraph" >1-	إيجاد حل مستدام ومستقل وصديق للبيئة لمشكلة الطاقة في قطاع غزة، والتخلي عن مصادر الطاقة القديمة، بشكل جزئي أو كلي، مما يخفض تسعيرة الكهرباء على المواطن، ويضمن عملها باستمرار.</p>
+                
+                <p class="paragraph"  >2-	حل مشاكل مولدات الكهرباء من الموج، واستبدال المواد الضارة بالبيئة بأخرى صديقة للبيئة ومعاد تدويرها</p>
+                </p>
+            </div>
+            
+    </div>
+
+    <span class="hamburger" onclick="toggleNav()" id="hamburger">&#9776;</span>
+
+    <footer class="footer">
+        <p>&copy; 2024 Waves For Gaza's Future. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidebar");
+            var hamburger = document.getElementById("hamburger");
+            var container = document.getElementById("links-container");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                container.style.display = 'none'
+                hamburger.innerHTML = "&#9776;"; 
+            } else {
+                sidebar.style.width = "250px";
+                container.style.display = 'block'
+                hamburger.innerHTML = "&#10005;";
+            }
+        }
+        document.addEventListener("click", function (event) {
+            var sidebar = document.getElementById("mySidebar");
+            var hamburger = document.getElementById("hamburger");
+
+            if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+                sidebar.style.width = "0";
+                document.getElementById("links-container").style.display = 'none';
+                hamburger.innerHTML = "&#9776;";
+            }
+        });
+    </script>
+
+</body>
+</html>
