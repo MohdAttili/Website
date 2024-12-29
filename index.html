@@ -18,13 +18,17 @@
     <div class="sidebar" id="mySidebar">
         <div id="links-container">
             <a href="index.html" class="link">الصفحة الرئيسية</a>
-            <a href="statistics.html" class="link">الإحصاءات</a>
+            <a href="target.html" class="link">الهدف</a>
             <a href="ResearchHypotheses.html" class="link">الخلفية العلمية وفرضيات البحث</a>
             <a href="resources.html" class="link">المصادر</a>
             <a href="design.html" class="link">التصميم</a>
+            <a href="applications.html" class="link">التطبيقات</a>
+            <a href="results.html" class="link">النتائج</a>
             <a href="allFiles.html" class="link">الملفات الكاملة للبحث العلمي</a>
             <a href="aboutUs.html" class="link">من نحن</a>
             <a href="financialReport.html" class="link">التقرير المالي</a>
+            <a href="thanks.html" class="link">شكر وتقدير</a>
+
         </div>
     </div>
 
@@ -51,33 +55,8 @@
         <p>&copy; 2024 Waves For Gaza's Future. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script>
-        function toggleNav() {
-            var sidebar = document.getElementById("mySidebar");
-            var hamburger = document.getElementById("hamburger");
-            var container = document.getElementById("links-container");
-            if (sidebar.style.width === "250px") {
-                sidebar.style.width = "0";
-                container.style.display = 'none';
-                hamburger.innerHTML = "&#9776;";
-            } else {
-                sidebar.style.width = "250px";
-                container.style.display = 'block';
-                hamburger.innerHTML = "&#10005;";
-            }
-        }
+    <script src="script.js"> </script>
 
-        document.addEventListener("click", function (event) {
-            var sidebar = document.getElementById("mySidebar");
-            var hamburger = document.getElementById("hamburger");
-
-            if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
-                sidebar.style.width = "0";
-                document.getElementById("links-container").style.display = 'none';
-                hamburger.innerHTML = "&#9776;";
-            }
-        });
-    </script>
 
 </body>
 </html>

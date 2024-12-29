@@ -18,23 +18,27 @@
     <div class="sidebar" id="mySidebar">
         <div id="links-container">
             <a href="index.html" class="link">الصفحة الرئيسية</a>
-            <a href="statistics.html" class="link">الإحصاءات</a>
+            <a href="target.html" class="link">الهدف</a>
             <a href="ResearchHypotheses.html" class="link">الخلفية العلمية وفرضيات البحث</a>
             <a href="resources.html" class="link">المصادر</a>
             <a href="design.html" class="link">التصميم</a>
+            <a href="applications.html" class="link">التطبيقات</a>
+            <a href="results.html" class="link">النتائج</a>
             <a href="allFiles.html" class="link">الملفات الكاملة للبحث العلمي</a>
             <a href="aboutUs.html" class="link">من نحن</a>
             <a href="financialReport.html" class="link">التقرير المالي</a>
+            <a href="thanks.html" class="link">شكر وتقدير</a>
+
         </div>
     </div>
 
     <div>
-        <h1 class="keyWord">من نحن؟</h1>
+        <h1 class="keyWord">تصميم القطع</h1>
         <div class="container" >
-            <div><img src="/resources/imgs/mohd.jpg"></div>
+            <div><img src="/resources/imgs/gearBoxDesign.jpg"></div>
             <div class>
-                <p class="subtitle" style="font-weight: 700;">محمد ليث عتيلي: 16 عام</p>
-                <p class="paragraph" style="font-size: 24px;">طالب في الصف العاشر المهني في مدرسة طولكرم الصناعية، لديه ميول إلى المجالات التقنية، وقد شارك سابقاً في عدة مسابقات لحل المشكلات، ومسابقات برمجة أخرى، ويطمح ليكون مبرمجاً تنافسياً عالمياً في السنوات القادمة.
+                <p class="subtitle" style="font-weight: 700;"> جسم المولد ("الطوافة")</p>
+                <p class="paragraph" style="font-size: 24px;">يعمل على زيادة الطاقة الحركية من خلال مسننات داخله..
                 </p>
             </div>
 
@@ -42,15 +46,27 @@
     </div>
     <div>
         <div class="container" >
-            <div><img src="/resources/imgs/saqr.png"></div>
-            <div >  
-                <p class="subtitle" style="font-weight: 700;">م.صقر جابر: 27 عام</p>
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam animi cumque quam. Natus, itaque nostrum, voluptatibus earum tempora velit molestiae enim quos doloremque quaerat, eius reprehenderit aperiam consectetur voluptatem!
+            <div><img src="/resources/imgs/gearBoxDesign.jpg"></div>
+            <div class>
+                <p class="subtitle" style="font-weight: 700;"> الــ Crank</p>
+                <p class="paragraph" style="font-size: 24px;">مسؤول عن تحويل طاقة الموج الميكانيكية أو الحركية إلى طاقة دورانية.
                 </p>
             </div>
-            
+
         </div>
     </div>
+    <div>
+        <div class="container" >
+            <div><img src="/resources/imgs/gearBoxDesign.jpg"></div>
+            <div class>
+                <p class="subtitle" style="font-weight: 700;"> الــ GearBox</p>
+                <p class="paragraph" style="font-size: 24px;">يعمل على زيادة الطاقة الحركية من خلال مسننات داخله..
+                </p>
+            </div>
+
+        </div>
+    </div>
+    
 
     <span class="hamburger" onclick="toggleNav()" id="hamburger">&#9776;</span>
 
@@ -58,32 +74,8 @@
         <p>&copy; 2024 Waves For Gaza's Future. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script>
-        function toggleNav() {
-            var sidebar = document.getElementById("mySidebar");
-            var hamburger = document.getElementById("hamburger");
-            var container = document.getElementById("links-container");
-            if (sidebar.style.width === "250px") {
-                sidebar.style.width = "0";
-                container.style.display = 'none'
-                hamburger.innerHTML = "&#9776;"; 
-            } else {
-                sidebar.style.width = "250px";
-                container.style.display = 'block'
-                hamburger.innerHTML = "&#10005;";
-            }
-        }
-        document.addEventListener("click", function (event) {
-            var sidebar = document.getElementById("mySidebar");
-            var hamburger = document.getElementById("hamburger");
+    <script src="script.js"> </script>
 
-            if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
-                sidebar.style.width = "0";
-                document.getElementById("links-container").style.display = 'none';
-                hamburger.innerHTML = "&#9776;";
-            }
-        });
-    </script>
 
 </body>
 </html>
