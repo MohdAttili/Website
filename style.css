@@ -54,6 +54,15 @@ font-family: 'Tajawal';
         flex-direction: column; 
         align-items: center; 
     }
+    .grid{
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .grid img {
+        max-width: 50%; 
+        height: auto;
+    }
+    
 }
 .keyWord{
     font-family: 'Tajawal';
@@ -143,6 +152,7 @@ font-family: 'Tajawal';
 }
 
 @media screen and (max-width: 768px) {
+    
     .container {
         padding-top: 20px;
     }
@@ -210,4 +220,41 @@ font-family: 'Tajawal';
     align-items: center;      
     height: 100vh;        
     text-align: center;
+}
+.grid {
+    display: flex; 
+    gap: 20px; 
+    direction: rtl;
+    align-items: center;
+}
+
+.grid div {
+    flex: 1; 
+    padding: 10px;
+    align-items: center;
+    
+}  
+    
+.grid img {
+    max-width: 20%; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
+    margin: 0 auto ; 
+}
+@media screen and (max-width: 768px) {
+  
+
+
+    .grid img {
+        max-width: 50%; 
+        height: auto;
+    }
+
+
+   
+
+    
+
+    
 }
