@@ -345,6 +345,7 @@ table td {
     margin-bottom: 20px;
 }
 .language-toggle {
+    font-variant: normal;
     font-family: "Segoe UI Symbol", sans-serif;
     text-rendering: optimizeLegibility;
     font-size: 25px;  
