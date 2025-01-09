@@ -22,3 +22,22 @@ document.addEventListener("click", function (event) {
         hamburger.innerHTML = "&#9776;";
     }
 });
+
+
+function toggleLanguage() {
+    let currentURL = window.location.href;
+
+    if (currentURL.includes(".html")) {
+        let htmlIndex = currentURL.indexOf(".html");
+
+        if (currentURL.slice(htmlIndex - 3, htmlIndex) === "Eng") {
+            currentURL = currentURL.slice(0, htmlIndex - 3) + currentURL.slice(htmlIndex);
+        } else {
+            currentURL = currentURL.slice(0, htmlIndex) + "Eng" + currentURL.slice(htmlIndex);
+        }
+    }
+
+    window.location.href = currentURL;
+}
+
+

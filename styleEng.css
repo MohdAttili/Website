@@ -1,5 +1,4 @@
 :root{
-
     --primaryColor :#80B8CE;
 }
 body{
@@ -28,11 +27,10 @@ body,h1 {
     
 }
 .paragraph{
-margin: 20px;
-direction: rtl;
-font-size: 24px;
-font-family: 'Tajawal';
-
+    margin: 20px;
+    direction: ltr;  /* تم التعديل هنا */
+    font-size: 24px;
+    font-family: 'Tajawal';
 }
 .container div:last-child {
     margin-bottom: 50px;
@@ -42,15 +40,14 @@ font-family: 'Tajawal';
 }
 .subtitle{
     font-family: 'Tajawal';
-    text-align: right;
+    text-align: left;  /* تم التعديل هنا */
     padding: 40px;
     font-size: 30px;
     font-weight: 500;
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
 }
 
 @media (max-width: 768px) {
-    
     
 }
 .keyWord{
@@ -62,10 +59,9 @@ font-family: 'Tajawal';
 .container {
     display: flex; 
     gap: 20px; 
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     align-items: center;
 }
-
 
 .container div {
     flex: 1; 
@@ -73,7 +69,7 @@ font-family: 'Tajawal';
     align-items: center;
     
 }  
-
+    
 .container img {
     max-width: 75%; 
     height: auto; 
@@ -89,12 +85,12 @@ font-family: 'Tajawal';
     width: 0;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;  /* تم التعديل هنا */
     background-color: var(--primaryColor);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     text-align: center;
     
 }
@@ -119,7 +115,7 @@ font-family: 'Tajawal';
     cursor: pointer;
     position: fixed;
     top: 10px;  
-    right: 15px; 
+    left: 15px;  /* تم التعديل هنا */
     z-index: 2;  
     background-color: white; 
     border: none;
@@ -133,26 +129,7 @@ font-family: 'Tajawal';
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
 }
-.language-toggle {
-    font-size: 25px;  
-    color: black;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;  
-    left: 15px; 
-    z-index: 2;  
-    background-color: white; 
-    border: none;
-    border-radius: 50%; 
-    padding: 10px;
-    width: 20px; 
-    height: 20px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-}
+
 
 .link{
     font-family: 'Tajawal';
@@ -246,7 +223,7 @@ font-family: 'Tajawal';
 .grid {
     display: flex; 
     gap: 20px; 
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     align-items: center;
 }
 
@@ -271,15 +248,12 @@ font-family: 'Tajawal';
         max-width: 70%; 
         height: auto;
     }
-    
-
-    
 }
 .table-container {
     margin: 20px auto;
     padding: 10px;
     max-width: 90%;
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     text-align: center;
 }
 
@@ -323,7 +297,7 @@ table td {
     color: black;
 }
 .cards-container {
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -370,10 +344,29 @@ table td {
     font-size: 16px;
     margin-bottom: 20px;
 }
-
+.language-toggle {
+    font-size: 25px;  
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;  
+    right: 15px; 
+    z-index: 2;  
+    background-color: white; 
+    border: none;
+    border-radius: 50%; 
+    padding: 10px;
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
 
 .sources-table {
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     margin: 20px auto;
     border-collapse: collapse;
     width: 80%;
@@ -399,7 +392,7 @@ table td {
     border-collapse: collapse;
     width: 80%;
     font-family: 'Tajawal', sans-serif;
-    direction: rtl;
+    direction: ltr;  /* تم التعديل هنا */
     padding-bottom: 60px;
 }
 .financial-table th, .financial-table td {
@@ -417,8 +410,3 @@ table td {
 .financial-table tr:hover {
     background-color: #ddd;
 }
-
-
-
-
-
