@@ -135,6 +135,7 @@ font-family: 'Tajawal';
 }
 .language-toggle {
     font-family: "Segoe UI Symbol", sans-serif;
+    text-rendering: optimizeLegibility;
     font-size: 25px;  
     color: black;
     cursor: pointer;
